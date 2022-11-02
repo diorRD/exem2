@@ -1,17 +1,19 @@
-.header{
+header{
     position: fixed;
     width: 100%;
     background-color: white;
 }
 .header__section{
-    .mobile__burger{
-        display: none;
-    }
-    .header__nav{
-        margin: 22px 22px;
+    .header__menu{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 22px;
+    }
+    .header__nav{
+        display: flex;
+        align-items: center;
+        gap: 32px;
     }
     .header__ul{
         display: flex;
@@ -19,39 +21,73 @@
         gap: 32px;
     }
 }
+.mobile__burger{
+    display: none;
+}
 .header__list{
-font-weight: 700;
-font-size: 15px;
-line-height: 25px;
-color: #939CAA;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
 }
 .header__get{
     padding: 13px 39px;
-font-weight: 700;
-font-size: 15px;
-line-height: 25px;
-text-align: center;
-color: #FFFFFF;
-background: #FCB72B;
-
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    
     &:hover {
         padding: 12px 39px;
-font-weight: 700;
-font-size: 15px;
-line-height: 25px;
-text-align: center;
-color: #FCB72B;
-background-color: #FFFFFF;
-border: 1px solid #FCB72B;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FCB72B;
+        background-color: #FFFFFF;
+        border: 1px solid #FCB72B;
     }
 }
+#menu {
+    appearance: none;
+    position: absolute;
+  }
 @media (max-width: 660px){
+    .logo{
+        margin: 0 auto;
+    }
+    .header__ul {
+        padding: 64px 135px 0 0;
+        flex-direction: column;
+        position: absolute;
+        top: 79px;
+        left: 0;
+        background-color: #333A44;
+        width: 70%;
+        height: 100vh;
+        transform: translate(-100%);
+    }
+    
+    .header__list {
+        color: #FFFFFF;
+    }
+    
+    .header__get {
+        display: none;
+    }
+    
+    .mobile__burger{
+        display: block;
+    }
+    #menu:checked ~ .header__ul {
+        transform: translateX(0);
+    }
 }
 @media (min-width: 661px) and (max-width: 1000px){
-    .header__nav{
-        margin: 22px 22px;
+    .header__menu{
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 }

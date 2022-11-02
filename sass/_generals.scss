@@ -18,6 +18,9 @@ a{
     text-decoration: none;
 }
 /*main section1*/
+main{
+    padding-top: 96px;
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and ( min-moz-device-pixel-ratio: 2),
@@ -35,25 +38,24 @@ only screen and (min-resolution: 2dppx) {
     margin: 0 auto;
     background-image: url(../images/main_section1_img.jpg);
     background-repeat: no-repeat;
-    background-size: 1440px 650px;
+    background-size: cover;
 }
 .section1__line{
     max-width: 1440px;
     height: 650px;
-    background-image: url(../images/line1.svg);
+    background-image: url(../images/line1.png);
     background-repeat: no-repeat;
     background-position: left center;
 }
 .line2{
-
-    background-image: url(../images/line2.svg);
+    background-image: url(../images/line2.png);
     background-repeat: no-repeat;
     background-position: center bottom ;
 }
 .section1__div h1{
     padding: 153px 0 120px 0px;
     max-width: 600px;
-height: 112px;
+    height: 112px;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
@@ -62,13 +64,13 @@ height: 112px;
 }
 .section1__div p{
     margin: 35px  0 50px 90px;
-   max-width: 400px;
-height: 100px;
+    max-width: 400px;
+    height: 100px;
     font-family: 'Lexend Deca';
-font-weight: 400;
-font-size: 15px;
-line-height: 25px;
-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
 .section1__div a{
     margin-left: 90px;
@@ -78,7 +80,7 @@ color: #FFFFFF;
     line-height: 25px;
     color: #FFFFFF;
     background: #FCB72B;
-
+    
     &:hover{
         padding: 12px 39px;
         font-weight: 700;
@@ -91,18 +93,65 @@ color: #FFFFFF;
     }
 }
 @media (max-width: 660px){
-
-}
-@media (min-width: 661px) and (max-width: 1000px){
     .section1__div h1{
         margin: 0 auto;
         text-align: center;
     }
     .section1__div p{
-        margin: 0 auto;
+       max-width: 311px;
+        height: 125px;
+        margin: 40px auto;
         text-align: center;
     }
     .section1__div a{
-       margin-left: 400px;
+        margin-left: 200px;
+    }
+    .section1__line{
+        background-image: none;
+    }
+    .line2{
+        background-image: none;
+    }
+    .line3{
+        background-image: none;
+    }
+    .line4{
+        background-image: url(../images/line4.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
     }
 }
+@media (min-width: 661px) and (max-width: 1000px){
+    .header__nav{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section1__div h1{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section1__div p{
+        max-width: 573px;
+        height: 75px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .section1__div a{
+        margin-left: 300px;
+    }
+    .section1__line{
+        background-image: none;
+    }
+    .line2{
+        background-image: none;
+    }
+    .line3{
+        background-image: url(../images/line3.png);
+        background-repeat: no-repeat;
+        background-position: left bottom ;
+    }
+}
+/*end off main section1*/
+/*main section2*/
+
+/*end off main section2*/
