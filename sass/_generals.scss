@@ -48,9 +48,11 @@ only screen and (min-resolution: 2dppx) {
     background-position: left center;
 }
 .line2{
+    width: 1440px;
+height: 650px;
     background-image: url(../images/line2.png);
     background-repeat: no-repeat;
-    background-position: center bottom ;
+    background-position: right 450px  top 350px;
 }
 .section1__div h1{
     padding: 153px 0 120px 0px;
@@ -153,5 +155,18 @@ only screen and (min-resolution: 2dppx) {
 }
 /*end off main section1*/
 /*main section2*/
-
+.main__section2{
+    margin: 160px 0;
+}
+.section2__line{
+    width: 973px;
+    height: 0;
+border: 15px solid #E5ECF4;
+}
+.oreng__oval{
+    width: 96px;
+    height: 96px;
+    background-color: #FCB72B;
+    border: 50%;
+}
 /*end off main section2*/
