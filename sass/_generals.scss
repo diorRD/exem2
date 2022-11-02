@@ -1,0 +1,108 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Space mono", monospace;
+}
+.container{
+    max-width: 1106px;
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*main section1*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min-moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .section1__banner{
+        background-image: url(../images/main_section1_img@2x.png);
+    }
+}
+.section1__banner{
+    max-width: 1440px;
+    height: 650px;
+    margin: 0 auto;
+    background-image: url(../images/main_section1_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px 650px;
+}
+.section1__line{
+    max-width: 1440px;
+    height: 650px;
+    background-image: url(../images/line1.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.line2{
+
+    background-image: url(../images/line2.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+}
+.section1__div h1{
+    padding: 153px 0 120px 0px;
+    max-width: 600px;
+height: 112px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+.section1__div p{
+    margin: 35px  0 50px 90px;
+   max-width: 400px;
+height: 100px;
+    font-family: 'Lexend Deca';
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #FFFFFF;
+}
+.section1__div a{
+    margin-left: 90px;
+    padding: 13px 39px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: #FCB72B;
+
+    &:hover{
+        padding: 12px 39px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FCB72B;
+        background-color: #5D6476;
+        border: 1px solid #FCB72B;
+    }
+}
+@media (max-width: 660px){
+
+}
+@media (min-width: 661px) and (max-width: 1000px){
+    .section1__div h1{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section1__div p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section1__div a{
+       margin-left: 400px;
+    }
+}
